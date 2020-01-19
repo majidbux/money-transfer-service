@@ -1,6 +1,7 @@
-# money-transfer-service
+# money-transfer-service [![Build Status](https://travis-ci.com/majidbux/money-transfer-service.svg?branch=master)](https://travis-ci.com/majidbux/money-transfer-service)
 
 RESTful API (including data model and the backing implementation) for money transfers between two accounts. 
+
  
 # Tech Stack
 - SparkJava
