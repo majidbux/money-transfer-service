@@ -42,7 +42,7 @@ Status: 201 Created
   "id": "52334b6a-22fb-452a-9acf-8f02df01c13e",
   "fromAccountId": "d1834642-2add-4b11-a0a6-decd09f4d237",
   "toAccountId": "c1834642-2add-4b11-a0a6-decd09f4d237",
-  "amount": 1,
+  "amount": 100,
   "details": "Lunch payment",
   "status": 3
 }
