@@ -3,7 +3,6 @@ package revolut.moneyTransfer.service;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import lombok.extern.slf4j.Slf4j;
-import org.jooq.exception.DataAccessException;
 import revolut.moneyTransfer.domain.Account;
 import revolut.moneyTransfer.domain.Transfer;
 import revolut.moneyTransfer.dto.TransferRequestDTO;
@@ -62,10 +61,9 @@ public class TransferService {
         try {
             transactionService.debitCustomerAccount(transfer.getFromAccountId(), transfer);
             transactionService.creditCustomerAccount(transfer.getToAccountId(), transfer);
-        } catch (DataAccessException e) {
-
         } catch (MoneyTransferBaseException e) {
             transferRepository.markTransferFailed(transfer.getId(), e.getMessage());
+            throw e;
         }
     }
 
