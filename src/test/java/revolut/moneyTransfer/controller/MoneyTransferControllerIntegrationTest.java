@@ -122,9 +122,7 @@ class MoneyTransferControllerIntegrationTest extends BaseIntegrationTest {
         // Create 100 threads and transfer 100 from account 1 to account 2
         final ExecutorService executorService = Executors.newFixedThreadPool(100);
         List<Callable<Transfer>> transferRequests = new ArrayList<>();
-        IntStream.range(0, 100).forEach(i -> {
-            transferRequests.add(() -> sendTransferRequest(transferRequestDTO));
-        });
+        IntStream.range(0, 100).forEach(i -> transferRequests.add(() -> sendTransferRequest(transferRequestDTO)));
         executorService.invokeAll(transferRequests);
         AccountRepository accountRepository = application.getInstance(AccountRepository.class);
         Account fromAccount = accountRepository.findById(transferRequestDTO.getFromAccountId());
