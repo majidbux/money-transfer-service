@@ -12,7 +12,7 @@
         <java.version>10</java.version>
         <org.hibernate.version>5.4.10.Final</org.hibernate.version>
         <org.flyway.version>6.1.4</org.flyway.version>
-        <org.h2.version>1.4.200</org.h2.version>
+        <org.h2.version>2.0.206</org.h2.version>
         <org.jooq.version>3.12.3</org.jooq.version>
         <org.slf4j-simple.version>1.7.21</org.slf4j-simple.version>
         <org.spark-core.version>2.9.0</org.spark-core.version>
