@@ -10,7 +10,7 @@
 
     <properties>
         <java.version>10</java.version>
-        <org.hibernate.version>5.4.10.Final</org.hibernate.version>
+        <org.hibernate.version>5.4.24.Final</org.hibernate.version>
         <org.flyway.version>6.1.4</org.flyway.version>
         <org.h2.version>1.4.200</org.h2.version>
         <org.jooq.version>3.12.3</org.jooq.version>
